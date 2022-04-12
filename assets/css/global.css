@@ -10,7 +10,7 @@
     @apply text-8xl;
   }
   img {
-    @apply hover:opacity-100 transition-opacity duration-300
+    @apply hover:opacity-100 transition-opacity duration-300;
   }
 }
 
@@ -25,6 +25,15 @@
     @apply object-cover;
   }
   .editor {
-    @apply text-base
+    @apply text-base;
+  }
+  .nav {
+    @apply bg-indigo-700 flex;
+  }
+  .navbar {
+    @apply font-semibold;
+  }
+  .navbar-logo {
+    @apply px-4 py-2;
   }
 }
