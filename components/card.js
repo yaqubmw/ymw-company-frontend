@@ -12,7 +12,7 @@ const Card = ({ blog }) => {
           </div>
           <div className="uk-card-body">
             <p id="category" className="category">
-              {blog.attributes.label.data.attributes.name}
+              {blog.attributes.label.data.attributes.label}
             </p>
             <p id="title" className="uk-text-large">
               {blog.attributes.title}
