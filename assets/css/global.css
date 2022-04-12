@@ -31,9 +31,15 @@
     @apply bg-indigo-700 flex;
   }
   .navbar {
-    @apply font-semibold;
+    @apply font-semibold text-lg;
   }
   .navbar-logo {
-    @apply px-4 py-2;
+    @apply px-4 py-2 text-2xl text-opacity-75 transiton duration-300 hover:text-opacity-100;
+  }
+  .navbar-menu {
+    @apply px-4 py-2 text-opacity-75 transiton duration-300 hover:text-opacity-100;
+  }
+  .grid {
+    @apply grid 
   }
 }
