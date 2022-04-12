@@ -9,4 +9,22 @@
   h1 {
     @apply text-8xl;
   }
+  img {
+    @apply hover:opacity-100 transition-opacity duration-300
+  }
+}
+
+@layer components {
+  .category {
+    @apply font-medium;
+  }
+  .title {
+    @apply tracking-tight text-lg;
+  }
+  .banner {
+    @apply object-cover;
+  }
+  .editor {
+    @apply text-base
+  }
 }
