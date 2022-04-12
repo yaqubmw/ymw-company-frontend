@@ -15,7 +15,7 @@
 }
 
 @layer components {
-  .category {
+  .label {
     @apply font-medium;
   }
   .title {
@@ -34,12 +34,9 @@
     @apply font-semibold text-lg;
   }
   .navbar-logo {
-    @apply px-4 py-2 text-2xl text-opacity-75 transiton duration-300 hover:text-opacity-100;
+    @apply px-4 py-2 text-2xl text-opacity-75 transition duration-300 hover:text-opacity-100;
   }
   .navbar-menu {
-    @apply px-4 py-2 text-opacity-75 transiton duration-300 hover:text-opacity-100;
-  }
-  .grid {
-    @apply grid 
+    @apply px-4 py-2 text-opacity-75 transition duration-300 hover:text-opacity-100;
   }
 }

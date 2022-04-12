@@ -2,31 +2,25 @@ import React from "react";
 import Card from "./card";
 
 const Blogs = ({ blogs }) => {
-  const leftArticlesCount = Math.ceil(blogs.length / 5);
-  const leftArticles = blogs.slice(0, leftArticlesCount);
-  const rightArticles = blogs.slice(leftArticlesCount, blogs.length);
+  const leftBlogsCount = Math.ceil(blogs.length / 5);
+  const leftBlogs = blogs.slice(0, leftBlogsCount);
+  const rightBlogs = blogs.slice(leftBlogsCount, blogs.length);
 
   return (
     <div>
-      <div className="uk-child-width-1-2@s" data-uk-grid="true">
+      <div className="">
         <div>
-          {leftArticles.map((blog, i) => {
+          {leftBlogs.map((blog, i) => {
             return (
-              <Card
-                blog={blog}
-                key={`article__left__${blog.attributes.slug}`}
-              />
+              <Card blog={blog} key={`blog__left__${blog.attributes.slug}`} />
             );
           })}
         </div>
         <div>
-          <div className="uk-child-width-1-2@m uk-grid-match" data-uk-grid>
-            {rightArticles.map((blog, i) => {
+          <div className="">
+            {rightBlogs.map((blog, i) => {
               return (
-                <Card
-                  blog={blog}
-                  key={`article__left__${blog.attributes.slug}`}
-                />
+                <Card blog={blog} key={`blog__left__${blog.attributes.slug}`} />
               );
             })}
           </div>

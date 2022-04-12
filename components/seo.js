@@ -40,7 +40,7 @@ const Seo = ({ seo }) => {
           <meta name="image" content={fullSeo.shareImage} />
         </>
       )}
-      {fullSeo.blog && <meta property="og:type" content="article" />}
+      {fullSeo.blog && <meta property="og:type" content="blog" />}
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );
