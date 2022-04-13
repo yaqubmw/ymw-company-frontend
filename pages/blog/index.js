@@ -4,13 +4,12 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import { fetchAPI } from "../../lib/api";
 
-const Blog = ({ blogs, labels, homepage }) => {
+const Blog = ({ blogs, homepage }) => {
   return (
     <Layout>
       <Seo seo={homepage.attributes.seo} />
-      <div className="uk-section">
-        <div className="uk-container uk-container-large">
-          <h1>{homepage.attributes.hero.title}</h1>
+      <div className="section">
+        <div className="">
           <Blogs blogs={blogs} />
         </div>
       </div>

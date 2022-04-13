@@ -1,29 +1,25 @@
 import React from "react";
 import Link from "next/link";
-import NextImage from "./image";
+import Image from "./image";
 
 const Card = ({ blog }) => {
   return (
-    <Link href={`/blog/${blog.attributes.slug}`}>
-      <a rel="canonical" className="uk-link-reset">
-        <div className="uk-card uk-card-muted">
-          <div className="uk-card-media-top">
-            <NextImage image={blog.attributes.image} />
-          </div>
-          <div className="uk-card-body">
-            <p id="category" className="uk-text-uppercase">
-              {blog.attributes.label.data.attributes.name}
-            </p>
-            <p id="title" className="uk-text-large">
+    <div className="card">
+      <Image className="card-img" image={blog.attributes.image} />
+      <div className="card-text">
+        <span id="label" className="card-label">
+          {blog.attributes.label.data.attributes.name}
+        </span>
+        <Link href={`/blog/${blog.attributes.slug}`}>
+          <a rel="canonical">
+            <p id="title" className="card-title">
               {blog.attributes.title}
             </p>
-          </div>
-        </div>
-      </a>
-    </Link>
+          </a>
+        </Link>
+      </div>
+    </div>
   );
 };
 
 export default Card;
-
-//

@@ -12,6 +12,9 @@
   img {
     @apply hover:opacity-100 transition-opacity duration-300;
   }
+  nav {
+    @apply z-50 bg-transparent py-2 px-4 font-semibold;
+  }
 }
 
 @layer components {
@@ -27,16 +30,34 @@
   .editor {
     @apply text-base;
   }
-  .nav {
-    @apply bg-indigo-700 flex;
-  }
   .navbar {
-    @apply font-semibold text-lg;
+    @apply flex justify-between items-center;
   }
   .navbar-logo {
-    @apply px-4 py-2 text-2xl text-opacity-75 transition duration-300 hover:text-opacity-100;
+    @apply px-4 text-xl text-red-500 transition duration-300 hover:text-black;
   }
   .navbar-menu {
-    @apply px-4 py-2 text-opacity-75 transition duration-300 hover:text-opacity-100;
+    @apply px-4 text-base text-red-500 transition duration-300 hover:text-black;
+  }
+  .card {
+    @apply rounded-b-lg bg-slate-200 w-96 m-2;
+  }
+  .card-img {
+    @apply w-full h-full;
+  }
+  .card-text {
+    @apply text-base py-2 px-2;
+  }
+  .card-label {
+    @apply py-1 px-2 text-white bg-blue-700 rounded;
+  }
+  .card-title {
+    @apply py-2 text-lg font-bold;
+  }
+  .blog-grid {
+    @apply grid grid-flow-col grid-cols-2;
+  }
+  .section {
+    @apply pt-24 px-14;
   }
 }
